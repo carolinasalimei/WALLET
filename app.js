@@ -4,7 +4,7 @@ let idFootIngresos = document.getElementById("idFootIngresos")
 let idFootGastos = document.getElementById("idFootGastos")
 let totalGastos = document.getElementById("totalGastos")
 let idDivGastos = document.getElementById("idDivGastos")
-let idDarkMode = document.getElementById("darkMode")
+let darkMode = document.getElementById("darkMode")
 let body = document.getElementById("body")
 let billeteraStyle = document.getElementById("billeteraStyle")
 let gastoMontoStyle = document.getElementById("gastoMontoStyle")
@@ -69,4 +69,85 @@ function agregarDinero() {
           alert("Ingrese dinero a su cuenta para empezar a calcular sus gastos!!")
      }
 
+}
+function eliminarDIV(a) {
+
+
+     let idMontos = document.getElementById(`idMontos${a}`).innerHTML.slice(1)
+     restar = parseFloat(idMontos)
+     gastosSumador = gastosSumador - restar
+     dinero = dinero + restar
+     disponible.innerText = `$${dinero}`
+     totalGastos.innerText = `$${gastosSumador}`
+     idFootGastos.innerText = `$${gastosSumador}`
+
+     if (dinero >= 0) {
+          disponible.style.color = `green`
+     }
+
+
+
+
+
+
+     let elimino = document.getElementById(`idItemGasto${a}`)
+     elimino.remove();
+
+
+
+
+}
+
+
+
+function onOffMode() {
+     if (darkSum == 0) {
+
+          darkMode.innerHTML = `<i class="bi bi-toggle-off">`
+
+          body.style.backgroundColor = "#C9E4C5"
+          billeteraStyle.style.backgroundColor = "#C9E4C5"
+          gastoMontoStyle.style.backgroundColor = "#B5CDA3"
+          headerStyle.style.backgroundColor = "#B5CDA3"
+          idInputDinero.style.backgroundColor = "#E8F3D6"
+          idInputGasto.style.backgroundColor = "#E8F3D6"
+          idInputMonto.style.backgroundColor = "#E8F3D6"
+          idFootResponsive.style.backgroundColor = "#C9E4C5"
+          idInputDinero.style.color = "black"
+          idInputGasto.style.color = "black"
+          idInputMonto.style.color = "black"
+          document.documentElement.style.setProperty(`--colorIconos`, `#b55b52`)
+          document.documentElement.style.setProperty(`--colorPlaceholder`, `#b55b52`)
+          document.documentElement.style.setProperty(`--contColorResponsive`, `#c8825b`)
+          document.documentElement.style.setProperty(`--lineaDiv`, `#b55b52`)
+          document.documentElement.style.setProperty(`--txtColor`, `#b55b52`)
+
+
+
+          darkSum = darkSum + 1
+
+     }
+     else if (darkSum == 1) {
+
+          darkMode.innerHTML = `<iclass="bi bi-toggle-off"></i>`
+          body.style.backgroundColor = " #0D0E0F"
+          billeteraStyle.style.backgroundColor = "#131415"
+          gastoMontoStyle.style.backgroundColor = "#131415"
+          headerStyle.style.backgroundColor = "#C5FC6B"
+          idInputDinero.style.backgroundColor = "#1B1C1E"
+          idInputGasto.style.backgroundColor = "#1B1C1E"
+          idInputMonto.style.backgroundColor = "#1B1C1E"
+          idFootResponsive.style.backgroundColor = "#C5FC6B"
+          idInputDinero.style.color = "white"
+          idInputGasto.style.color = "white"
+          idInputMonto.style.color = "white"
+
+          document.documentElement.style.setProperty(`--colorPlaceholder`, `#C5FC6B`)
+          document.documentElement.style.setProperty(`--contColorResponsive`, `#1B1C1E`)
+          document.documentElement.style.setProperty(`--colorIconos`, `#C5FC6B`)
+          document.documentElement.style.setProperty(`--lineaDiv`, `silver`)
+          document.documentElement.style.setProperty(`--txtColor`, `white`)
+
+          darkSum = darkSum - 1
+     }
 }
