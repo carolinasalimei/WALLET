@@ -20,9 +20,9 @@ body {
      position: relative;
      border: 10px solid rgba(31, 86, 77, 0.6);
      border-color: black;
-
-
 }
+
+
 
 header {
      display: flex;
@@ -45,5 +45,488 @@ header {
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
      color: green;
      text-shadow: 1px 1px #0D0E0F;
+
+}
+
+
+.hero {
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     width: 90%;
+}
+
+.contHero {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 62vw;
+     height: 100vh;
+     border: 5px solid black;
+     border-radius: 10px;
+}
+
+.contBilletera {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     border: none;
+     width: 100%;
+
+}
+
+.contBilletera h2 {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     font-size: 3rem;
+}
+
+.onOff .bi-toggle-off {
+     background-color: black;
+     font-size: 40px;
+     color: #A8EB12;
+     transition: 0.5s;
+     margin-right: 700px;
+
+}
+
+.light {
+     font-size: 2rem;
+     color: red;
+     transition: 0.5s;
+
+}
+
+.light:hover {
+     transform: scale(1.5);
+
+
+}
+
+.dark {
+     font-size: 2rem;
+     color: #C5FC6B;
+     transition: 0.5s;
+}
+
+.dark:hover {
+     transform: scale(1.5);
+
+}
+
+
+
+.contFormu {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     margin-top: 1rem;
+     width: 80%;
+     height: 50%;
+     top: 10px;
+     border: 5px solid black;
+     border-radius: 10px;
+}
+
+.contDinero {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     border: 5px solid black;
+     border-radius: 10px;
+}
+
+.inputDinero {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     width: 80%;
+     height: 4rem;
+     border-radius: 20px;
+     border: 2px solid black;
+     color: white;
+     text-align: center;
+     font-size: 1.5rem;
+
+}
+
+
+input[type=number] {
+     margin: 0;
+}
+
+.contGastoyMonto {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     border: 5px solid black;
+     border-radius: 10px;
+     position: absolute;
+     margin-top: 5rem;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+
+}
+
+.inputGasto {
+     width: 40%;
+     height: 4rem;
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     border-radius: 10px;
+     border: 2px solid black;
+     color: white;
+     text-align: center;
+     font-size: 1.5rem;
+
+}
+
+.inputMonto {
+     width: 40%;
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     border-radius: 10px;
+     border: 2px solid black;
+     color: white;
+     text-align: center;
+     font-size: 1.5rem;
+
+}
+
+.bi-plus-square {
+     font-size: 50px;
+     color: #A8EB12;
+     transition: 0.5s;
+}
+
+.bi-plus-square:hover {
+     color: red;
+     transform: scale(1.5) rotate(360deg);
+
+}
+
+
+.bi-currency-dollar {
+     font-size: 50px;
+     color: #A8EB12;
+     transition: 0.5s;
+}
+
+.bi-currency-dollar:hover {
+     color: red;
+     transform: scale(1.5);
+}
+
+.bi-trash {
+
+     width: 10%;
+     font-size: 50px;
+     color: #A8EB12;
+     cursor: pointer;
+}
+
+.bi-trash:hover {
+     color: red;
+     transform: scale(1.5);
+}
+
+
+
+::placeholder {
+     padding-left: 0px;
+
+}
+
+
+.contGastosRealizados {
+     background-color: transparent;
+     color: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+
+}
+
+.divGastos {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     border: 5px solid black;
+     padding: 0.5rem;
+     border-radius: 10px;
+     width: 80%;
+     height: 50%;
+     display: flex;
+     flex-direction: column;
+     margin-top: 0.1rem
+}
+
+.divGastos::-webkit-scrollbar {
+     display: none;
+}
+
+.contGastosRealizados h2 {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     font-size: 2rem;
+}
+
+.gasto {
+     width: 100%;
+     height: 15%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-bottom: 1px solid;
+     color: red;
+}
+
+.gasto {
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     flex-basis: 70%;
+}
+
+
+.footResponsive {
+     display: none;
+}
+
+@media(max-width:1025px) {
+
+
+     header {
+          border-radius: 20px;
+          margin: 0.5rem;
+          position: sticky;
+          top: 0px;
+     }
+
+     .contHeader {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+
+     }
+
+     .contDisponible {
+          text-align: center;
+     }
+
+     .contGastosRealizados {
+          background-color: transparent;
+          border: 1px solid silver;
+     }
+
+     .divGastos {
+          width: 90%;
+
+
+     }
+
+     .contFormu {
+          display: flex;
+     }
+
+
+}
+
+.contGastoyMonto {
+     margin-top: 10%;
+}
+
+.gasto {
+     display: flex;
+     justify-content: space-evenly;
+     background-color: white;
+
+     border: 0px solid;
+     border-radius: 10px;
+     height: 30%;
+     padding-top: 3%;
+     padding-bottom: 3%;
+     margin-top: 1%;
+     margin-bottom: 1%;
+
+
+
+
+
+}
+
+.contGastos {
+     display: none;
+}
+
+.contIngreso {
+     display: none;
+}
+
+
+
+.contHero {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.contBilletera {
+     margin-top: 0.5rem;
+     width: 95%;
+     height: 50vh;
+     border-radius: 20px;
+     background-color: transparent;
+     border: 1px solid silver;
+}
+
+.contGastosRealizados {
+     margin-top: 1rem;
+     width: 95%;
+     height: 60vh;
+     border-radius: 20px;
+
+}
+
+.inputDinero {
+     height: 2rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+}
+
+.inputGasto {
+     height: 2rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+
+}
+
+.inputMonto {
+     height: 2rem;
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+
+}
+
+.iconoAgregar {
+     pointer-events: none;
+}
+
+.iconoDinero {
+     pointer-events: none;
+}
+
+.footResponsive {
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+
+     border-radius: 20px;
+     position: sticky;
+     top: 0px;
+     margin: -700px;
+}
+
+.contFoot {
+     display: flex;
+     justify-content: space-evenly;
+     width: 90vw;
+}
+
+
+@media(max-width:1025px) and (orientation:landscape) {
+     header {
+          border-radius: 20px;
+          margin: 0.5rem;
+     }
+
+     .contHeader {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+
+     }
+
+     .contDisponible {
+
+          width: 40vw;
+          text-align: center;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+     }
+
+     .contGastos {
+          display: none;
+     }
+
+     .contIngreso {
+          display: none;
+     }
+
+     .contHero {
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .contBilletera {
+          margin-top: 0.5rem;
+          width: 95%;
+          height: 70vh;
+          border-radius: 20px;
+          display: flex;
+
+     }
+
+     .contGastoyMonto {
+          margin-top: 1rem;
+          overflow-y: scroll;
+     }
+
+     .contFormu {
+          display: flex;
+          justify-content: center;
+     }
+
+     .contGastosRealizados {
+          margin-top: 1rem;
+          width: 95%;
+          height: 60vh;
+          border-radius: 20px;
+
+
+     }
+
+     .inputDinero {
+          height: 0.4rem;
+     }
+
+     .inputGasto {
+          margin-top: 0.2rem;
+          margin-bottom: 0.2rem;
+          height: 0.4rem;
+     }
+
+     .inputMonto {
+          margin-top: 0.2rem;
+          margin-bottom: 0.2rem;
+          height: 0.4rem;
+     }
+
+     .onOff {
+          display: flex;
+          height: 0.5%;
+
+     }
+
+     .iconoAgregar {
+          pointer-events: none;
+     }
+
+     .iconoDinero {
+          pointer-events: none;
+     }
 
 }

@@ -35,3 +35,75 @@
 
                     </div>
                </div>
+
+          </header>
+          <section class="hero">
+               <div class="contHero">
+
+                    <div class="contBilletera" id="billeteraStyle">
+                         <div class="onOff"><a href="#" id="darkMode" onclick="onOffMode()"><i
+                                        class="bi bi-toggle-off"></i></a>
+                         </div>
+                         <h2>Wallet</h2>
+                         <div class="contFormu">
+                              <form action="">
+                                   <div class="contDinero">
+                                        <input type="number" class="inputDinero" placeholder="Ingrese Dinero $$ →"
+                                             id="idInputDinero" maxlength="9">
+                                        <a href="#" class="etiqIconoDinero" onclick="haceClick()"><i
+                                                  class="bi bi-currency-dollar"></i></a>
+                                   </div>
+                                   <div class="contGastoyMonto">
+                                        <input type="text" class="inputGasto" placeholder="Gasto" id="idInputGasto">
+                                        <input type="number" class="inputMonto" placeholder="Monto $" id="idInputMonto">
+                                        <a href="#" class="etiqIconoAgregar" onclick="agregarDinero()"><i
+                                                  class="bi bi-plus-square" id="idStyleIconoAgregar"></i></a>
+
+
+
+
+
+                                   </div>
+
+                              </form>
+                         </div>
+
+
+
+                    </div>
+                    <div class="contGastosRealizados" id="gastoMontoStyle">
+                         <h2>Gastos</h2>
+
+                         <div class="divGastos" id="idDivGastos">
+                              <a href="#" class="eliminarDinero" onclick="eliminarDinero()"></a> <i
+                                   class="bi bi-trash"></i>
+
+
+
+                         </div>
+
+
+
+
+                    </div>
+
+               </div>
+          </section>
+          <footer class="footResponsive" id="idFootResponsive">
+               <div class="contFoot">
+                    <div class="footIngresos">
+                         <p>Total Ingreso</p>
+                         <h1 id="idIngresos">$0.00</h1>
+
+                    </div>
+                    <div class="footGastos">
+                         <p>Total Gastos</p>
+                         <h1 id="idGastos">$0.00</h1>
+                    </div>
+               </div>
+
+          </footer>
+          <script src="./app.js"></script>
+     </body>
+
+</html>
