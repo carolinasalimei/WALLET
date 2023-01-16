@@ -39,6 +39,7 @@ header {
      align-items: center;
      font-size: 2rem;
      box-shadow: 0 0 40px rgba(1, 1, 1, 0.9);
+     color: #A8EB12;
 }
 
 .h1Disponible {
@@ -81,6 +82,7 @@ header {
 .contBilletera h2 {
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
      font-size: 3rem;
+     color: #A8EB12;
 }
 
 .onOff .bi-toggle-off {
@@ -136,6 +138,7 @@ header {
      justify-content: space-evenly;
      border: 5px solid black;
      border-radius: 10px;
+
 }
 
 .inputDinero {
@@ -144,7 +147,7 @@ header {
      height: 4rem;
      border-radius: 20px;
      border: 2px solid black;
-     color: white;
+     color: #A8EB12;
      text-align: center;
      font-size: 1.5rem;
 
@@ -174,7 +177,7 @@ input[type=number] {
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
      border-radius: 10px;
      border: 2px solid black;
-     color: white;
+     color: #A8EB12;
      text-align: center;
      font-size: 1.5rem;
 
@@ -185,7 +188,7 @@ input[type=number] {
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
      border-radius: 10px;
      border: 2px solid black;
-     color: white;
+     color: #A8EB12;
      text-align: center;
      font-size: 1.5rem;
 
@@ -237,7 +240,7 @@ input[type=number] {
 
 .contGastosRealizados {
      background-color: transparent;
-     color: black;
+     color: #A8EB12;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -309,7 +312,7 @@ input[type=number] {
 
      .contGastosRealizados {
           background-color: transparent;
-          border: 1px solid silver;
+
      }
 
      .divGastos {
@@ -334,7 +337,6 @@ input[type=number] {
      display: flex;
      justify-content: space-evenly;
      background-color: white;
-
      border: 0px solid;
      border-radius: 10px;
      height: 30%;
@@ -372,7 +374,7 @@ input[type=number] {
      height: 50vh;
      border-radius: 20px;
      background-color: transparent;
-     border: 1px solid silver;
+
 }
 
 .contGastosRealizados {
@@ -418,7 +420,6 @@ input[type=number] {
      align-items: center;
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
      color: #A8EB12;
-
      border-radius: 20px;
      position: sticky;
      top: 0px;
@@ -448,7 +449,6 @@ input[type=number] {
      }
 
      .contDisponible {
-
           width: 40vw;
           text-align: center;
           display: flex;
@@ -465,7 +465,6 @@ input[type=number] {
      }
 
      .contHero {
-
           display: flex;
           flex-direction: column;
           align-items: center;
