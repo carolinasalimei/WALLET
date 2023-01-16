@@ -43,7 +43,7 @@ header {
 
 .h1Disponible {
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
-     color: green;
+     color: #A8EB12;
      text-shadow: 1px 1px #0D0E0F;
 
 }
@@ -216,7 +216,6 @@ input[type=number] {
 }
 
 .bi-trash {
-
      width: 10%;
      font-size: 50px;
      color: #A8EB12;
@@ -263,7 +262,7 @@ input[type=number] {
 }
 
 .contGastosRealizados h2 {
-     background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+
      font-size: 2rem;
 }
 
@@ -274,13 +273,11 @@ input[type=number] {
      justify-content: space-between;
      align-items: center;
      border-bottom: 1px solid;
-     color: red;
-}
-
-.gasto {
+     color: #A8EB12;
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
      flex-basis: 70%;
 }
+
 
 
 .footResponsive {
@@ -333,6 +330,7 @@ input[type=number] {
 }
 
 .gasto {
+     color: #A8EB12;
      display: flex;
      justify-content: space-evenly;
      background-color: white;
@@ -419,6 +417,7 @@ input[type=number] {
      justify-content: center;
      align-items: center;
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
+     color: #A8EB12;
 
      border-radius: 20px;
      position: sticky;

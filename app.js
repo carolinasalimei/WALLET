@@ -1,7 +1,8 @@
+
 let disponible = document.getElementById("disponible")
 let totalIngresos = document.getElementById("totalIngresos")
-let idFootIngresos = document.getElementById("idFootIngresos")
-let idFootGastos = document.getElementById("idFootGastos")
+let idIngresos = document.getElementById("idIngresos")
+let idGastos = document.getElementById("idGastos")
 let totalGastos = document.getElementById("totalGastos")
 let idDivGastos = document.getElementById("idDivGastos")
 let darkMode = document.getElementById("darkMode")
@@ -12,6 +13,7 @@ let headerStyle = document.getElementById("headerStyle")
 let idFootResponsive = document.getElementById("idFootResponsive")
 let idStyleIconoDinero = document.getElementById("idStyleIconoDinero")
 let idStyleIconoAgregar = document.getElementById("idStyleIconoAgregar")
+
 
 
 
@@ -33,10 +35,11 @@ function haceClick() {
 
      disponible.innerText = `$${dinero}`
      totalIngresos.innerText = `$${dinero}`
-     idFootIngresos.innerText = `$${dinero}`
+     idIngresos.innerText = `$${dinero}`
 
 
 }
+
 
 
 function agregarDinero() {
@@ -49,16 +52,18 @@ function agregarDinero() {
           gastosSumador = gastosSumador + monto
           disponible.innerText = `$${dinero}`
           totalGastos.innerText = `$${gastosSumador}`
-          idFootGastos.innerText = `$${gastosSumador}`
+          idGastos.innerText = `$${gastosSumador}`
           if (dinero < 0) {
                disponible.style.color = `red`
           }
-          idDivGastos.insertAdjacentHTML("beforeend", `<div class="gasto" id="idItemGasto${sumX}"  >´
+          idDivGastos.insertAdjacentHTML("beforeend", `<div class="gasto" id="idItemGasto${sumX}"  >
 <h3 class="gastoRealizado">${gasto}</h3>
 <h3 class="precio" id="idMontos${sumX}" >$${monto}</h3>
-<a href="#" class="iconoTacho" id="idEliminarDiv" onclick="eliminarDIV(${sumX})"><i class="fa-regular fa-trash-can iconoEliminar"></i></a>
+<a href="#" class="iconoTacho" id="idEliminarDiv" onclick="eliminarDIV(${sumX})"><i class="bi bi-trash iconoEliminar"></i></a>
 
 </div>`)
+
+
 
           document.getElementById("idInputGasto").value = ``
           document.getElementById("idInputMonto").value = ``
@@ -70,6 +75,9 @@ function agregarDinero() {
      }
 
 }
+
+
+
 function eliminarDIV(a) {
 
 
@@ -96,6 +104,7 @@ function eliminarDIV(a) {
 
 
 
+
 }
 
 
@@ -103,24 +112,28 @@ function eliminarDIV(a) {
 function onOffMode() {
      if (darkSum == 0) {
 
-          darkMode.innerHTML = `<i class="bi bi-toggle-off">`
+          darkMode.innerHTML = `<i class=""bi bi-toggle-off""></i>`
 
-          body.style.backgroundColor = "#C9E4C5"
-          billeteraStyle.style.backgroundColor = "#C9E4C5"
-          gastoMontoStyle.style.backgroundColor = "#B5CDA3"
-          headerStyle.style.backgroundColor = "#B5CDA3"
-          idInputDinero.style.backgroundColor = "#E8F3D6"
-          idInputGasto.style.backgroundColor = "#E8F3D6"
-          idInputMonto.style.backgroundColor = "#E8F3D6"
-          idFootResponsive.style.backgroundColor = "#C9E4C5"
+          body.style.backgroundColor = "#f8efc4"
+          billeteraStyle.style.backgroundColor = "#e4b987"
+          gastoMontoStyle.style.backgroundColor = "#e4b987"
+          headerStyle.style.backgroundColor = "#c8825b"
+          idInputDinero.style.backgroundColor = "#f8efec"
+          idInputGasto.style.backgroundColor = "#f8efec"
+          idInputMonto.style.backgroundColor = "#f8efec"
+          idFootResponsive.style.backgroundColor = "#c8825b"
           idInputDinero.style.color = "black"
           idInputGasto.style.color = "black"
           idInputMonto.style.color = "black"
           document.documentElement.style.setProperty(`--colorIconos`, `#b55b52`)
           document.documentElement.style.setProperty(`--colorPlaceholder`, `#b55b52`)
+
           document.documentElement.style.setProperty(`--contColorResponsive`, `#c8825b`)
           document.documentElement.style.setProperty(`--lineaDiv`, `#b55b52`)
           document.documentElement.style.setProperty(`--txtColor`, `#b55b52`)
+
+
+
 
 
 
@@ -129,7 +142,7 @@ function onOffMode() {
      }
      else if (darkSum == 1) {
 
-          darkMode.innerHTML = `<iclass="bi bi-toggle-off"></i>`
+          darkMode.innerHTML = `<i class=""bi bi-toggle-off""></i>`
           body.style.backgroundColor = " #0D0E0F"
           billeteraStyle.style.backgroundColor = "#131415"
           gastoMontoStyle.style.backgroundColor = "#131415"
