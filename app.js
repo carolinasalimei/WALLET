@@ -114,14 +114,14 @@ function onOffMode() {
 
           darkMode.innerHTML = `<i class=""bi bi-toggle-off""></i>`
 
-          body.style.backgroundColor = "#f8efc4"
-          billeteraStyle.style.backgroundColor = "#e4b987"
-          gastoMontoStyle.style.backgroundColor = "#e4b987"
-          headerStyle.style.backgroundColor = "#c8825b"
-          idInputDinero.style.backgroundColor = "#f8efec"
-          idInputGasto.style.backgroundColor = "#f8efec"
-          idInputMonto.style.backgroundColor = "#f8efec"
-          idFootResponsive.style.backgroundColor = "#c8825b"
+          body.style.backgroundColor = "#bdc3c7"
+          billeteraStyle.style.backgroundColor = "#95a5a6"
+          gastoMontoStyle.style.backgroundColor = "#95a5a6"
+          headerStyle.style.backgroundColor = "#7f8c8d"
+          idInputDinero.style.backgroundColor = "#bdc3c7"
+          idInputGasto.style.backgroundColor = "#bdc3c7"
+          idInputMonto.style.backgroundColor = "#bdc3c7"
+          idFootResponsive.style.backgroundColor = "#7f8c8d"
           idInputDinero.style.color = "black"
           idInputGasto.style.color = "black"
           idInputMonto.style.color = "black"
@@ -144,7 +144,7 @@ function onOffMode() {
 
           darkMode.innerHTML = `<i class=""bi bi-toggle-off""></i>`
           body.style.backgroundColor = " #0D0E0F"
-          billeteraStyle.style.backgroundColor = "#131415"
+          billeteraStyle.style.backgroundColor = "rgba(36, 139, 156, 0.9)"
           gastoMontoStyle.style.backgroundColor = "#131415"
           headerStyle.style.backgroundColor = "#C5FC6B"
           idInputDinero.style.backgroundColor = "#1B1C1E"

@@ -5,6 +5,21 @@
      display: flexbox;
 }
 
+root {
+     --colorPlaceholder: #C5FC6B;
+     --colorHover: green;
+     --contColorResponsive: #1B1C1E;
+     --colorIconos: #C5FC6B;
+     --lineaDiv: silver;
+     --txtColor: white;
+     --color: #0D0E0F;
+     color: #131415;
+     color: #f8efc4;
+     color: #e4b987;
+     color: #c8825b;
+
+
+}
 
 
 
@@ -30,6 +45,10 @@ header {
      align-items: center;
      background: linear-gradient(rgba(36, 139, 156, 0.9), black);
      height: 25vh;
+     border-radius: 10px;
+     width: 95%;
+     border: 5px solid black;
+
 }
 
 .contHeader {
@@ -40,6 +59,8 @@ header {
      font-size: 2rem;
      box-shadow: 0 0 40px rgba(1, 1, 1, 0.9);
      color: #A8EB12;
+     border-radius: 10px;
+
 }
 
 .h1Disponible {
@@ -126,9 +147,9 @@ header {
      margin-top: 1rem;
      width: 80%;
      height: 50%;
-     top: 10px;
+
      border: 5px solid black;
-     border-radius: 10px;
+
 }
 
 .contDinero {
@@ -150,6 +171,7 @@ header {
      color: #A8EB12;
      text-align: center;
      font-size: 1.5rem;
+     top: 10px;
 
 
 }
@@ -168,6 +190,7 @@ input[type=number] {
      display: flex;
      justify-content: space-evenly;
      align-items: center;
+
 
 }
 
