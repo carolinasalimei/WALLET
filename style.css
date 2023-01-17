@@ -92,7 +92,11 @@ header {
      color: #A8EB12;
 }
 
-.onOff .bi-toggle-off {
+.onOff {
+     width: 80%;
+}
+
+.bi-toggle-off {
      position: sticky;
      background-color: black;
      font-size: 40px;
@@ -117,7 +121,7 @@ header {
 
 .dark {
      font-size: 2rem;
-     color: #C5FC6B;
+     color: silver;
      transition: 0.5s;
 }
 

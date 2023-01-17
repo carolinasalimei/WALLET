@@ -59,7 +59,7 @@ function agregarDinero() {
           idDivGastos.insertAdjacentHTML("beforeend", `<div class="gasto" id="idItemGasto${sumX}"  >
 <h3 class="gastoRealizado">${gasto}</h3>
 <h3 class="precio" id="idMontos${sumX}" >$${monto}</h3>
-<a href="#" class="iconoTacho" id="idEliminarDiv" onclick="eliminarDIV(${sumX})"><i class="bi bi-trash iconoEliminar"></i></a>
+<a href="#" class="eliminarDinero" id="idEliminarDiv" onclick="eliminarDIV(${sumX})"><i class="bi bi-trash iconoEliminar"></i></a>
 
 </div>`)
 
@@ -76,8 +76,6 @@ function agregarDinero() {
 
 }
 
-
-
 function eliminarDIV(a) {
 
 
@@ -87,7 +85,7 @@ function eliminarDIV(a) {
      dinero = dinero + restar
      disponible.innerText = `$${dinero}`
      totalGastos.innerText = `$${gastosSumador}`
-     idFootGastos.innerText = `$${gastosSumador}`
+     idGastos.innerText = `$${gastosSumador}`
 
      if (dinero >= 0) {
           disponible.style.color = `green`
@@ -161,6 +159,6 @@ function onOffMode() {
           document.documentElement.style.setProperty(`--lineaDiv`, `silver`)
           document.documentElement.style.setProperty(`--txtColor`, `white`)
 
-          darkSum = darkSum - 1
+          darkSum = darkSum + 1
      }
 }
